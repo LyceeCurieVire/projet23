@@ -8,7 +8,7 @@ perso.src = "perso.jpg";
 
 // On définit la position initiale
 var x=canvas.width/2;
-var y=canvas.width/2;
+var y=canvas.height/2;
 
 // Cette fonction modifie la position du personnage lorsque le joueur appuie sur une touche de direction
 function gestionnaire(e){
