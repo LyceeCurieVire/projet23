@@ -1,6 +1,6 @@
 // On récupère le canevas et on définit un contexte de dessin
 var canvas = document.getElementById("canvas");
-var ctx = c.getContext("2d");
+var ctx = canvas.getContext("2d");
 
 // On charge l'image du personnage
 var perso = new Image();
