@@ -16,13 +16,13 @@ function gestionnaire(e){
   if (e.key=="ArrowUp" && y>10){
     y=y-10;
   }
-  else if e.key=="ArrowDown" && y<canvas.height-10){
+  else if (e.key=="ArrowDown" && y<canvas.height-10){
     y=y+10;
   }
-  else if e.key=="ArrowLeft" && x>10){
+  else if (e.key=="ArrowLeft" && x>10){
     x=x-10;
   }
-  else if e.key=="ArrowRight" && x<canvas.width-10){
+  else if (e.key=="ArrowRight" && x<canvas.width-10){
     x=x+10;
   }
 };
