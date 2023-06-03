@@ -13,17 +13,17 @@ var y=canvas.height/2;
 // Cette fonction modifie la position du personnage lorsque le joueur appuie sur une touche de direction
 function gestionnaire(e){
   console.log(e.key);
-  if (e.key=="ArrowUp" && y>10){
-    y=y-10;
+  if (e.key=="ArrowUp" && y>5){
+    y=y-5;
   }
-  else if (e.key=="ArrowDown" && y<canvas.height-10){
-    y=y+10;
+  else if (e.key=="ArrowDown" && y<canvas.height-65){
+    y=y+5;
   }
-  else if (e.key=="ArrowLeft" && x>10){
-    x=x-10;
+  else if (e.key=="ArrowLeft" && x>5){
+    x=x-5;
   }
-  else if (e.key=="ArrowRight" && x<canvas.width-10){
-    x=x+10;
+  else if (e.key=="ArrowRight" && x<canvas.width-65){
+    x=x+5;
   }
 };
 
@@ -33,7 +33,7 @@ document.addEventListener('keydown',gestionnaire);
 function dessine(){
   console.log("dessin");
   ctx.clearRect(0, 0, canvas.width, canvas.height);   //on efface le canevas
-  ctx.drawImage(perso,x,y,30,30); // on dessine le personnage
+  ctx.drawImage(perso,x,y,60,60); // on dessine le personnage
 };
 
 // on lance la boucle de dessin
