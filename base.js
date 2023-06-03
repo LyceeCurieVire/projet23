@@ -32,7 +32,7 @@ document.addEventListener('keydown',gestionnaire);
 
 function dessine(){
   console.log("dessin");
-  ctx.clearRect(0, 0, canvasWidth, canvasHeight);   //on efface le canevas
+  ctx.clearRect(0, 0, canvas.width, canvas.height);   //on efface le canevas
   ctx.drawImage(perso,x,y,30,30); // on dessine le personnage
 };
 
