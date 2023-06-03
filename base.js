@@ -12,7 +12,7 @@ var y=canvas.height/2;
 
 // Cette fonction modifie la position du personnage lorsque le joueur appuie sur une touche de direction
 function gestionnaire(e){
-  console.log(e.key);
+  //console.log(e.key);
   if (e.key=="ArrowUp" && y>5){
     y=y-5;
   }
@@ -31,7 +31,7 @@ function gestionnaire(e){
 document.addEventListener('keydown',gestionnaire);
 
 function dessine(){
-  console.log("dessin");
+  //console.log("dessin");
   ctx.clearRect(0, 0, canvas.width, canvas.height);   //on efface le canevas
   ctx.drawImage(perso,x,y,60,60); // on dessine le personnage
 };
